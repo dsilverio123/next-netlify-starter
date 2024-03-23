@@ -84,6 +84,7 @@ export default function Home() {
 
       <Head>
         <title>Voter Representative Info</title>
+        <meta property="og:image" content="https://your-app-name.netlify.app/Cover.png" />
         <link rel="icon" href="/download.ico" />
       </Head>
 
