@@ -1,0 +1,18 @@
+/* components/Header.module.css */
+.header {
+    width: 100%;
+    background-color: #333; /* Or any color you prefer */
+    color: white;
+    border-bottom: 1px solid #eaeaea; /* Adds a border at the bottom */
+    display: flex;
+    justify-content: center; /* Centers the navigation links horizontally */
+    align-items: center; /* Centers the navigation links vertically */
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 20px; /* Adjust the space between the links as needed */
+  }
+  
+  /* Add other styles for .title, .link, etc., as needed */
+  

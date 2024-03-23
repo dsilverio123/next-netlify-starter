@@ -1,17 +1,20 @@
-html,
-body {
+/* globals.css */
+
+/* Resetting default browser styling */
+html, body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
     Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-* {
+/* Applying box-sizing to all elements for better size control */
+*, *:before, *:after {
   box-sizing: border-box;
 }
 
+/* Main content styling */
 main {
-  padding: 5rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -19,6 +22,9 @@ main {
   align-items: center;
 }
 
+
+
+/* Code block styling */
 code {
   background: #fafafa;
   border-radius: 5px;
@@ -26,10 +32,108 @@ code {
   font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
 }
 
+/* Container styling */
 .container {
-  height: 100vh;
+  margin: 0 auto;
+
+}
+
+
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Button styling for dark mode */
+button {
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  background: #333;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: #555;
+}
+
+/* Input field styling for dark mode */
+input[type="text"] {
+  border: 1px solid #333;
+  padding: 0.75rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+}
+
+/* Applying dark mode styles to other elements as needed */
+.dropdown, .table th, .table td {
+  background-color: #333;
+  color: white;
+}
+
+.tableContainer {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  width: 100%;
+  margin-top: 2rem; /* Space after the division name */
+}
+
+.table {
+  width: 90%; /* Or max-width if you want to limit the size */
+  margin-top: 1rem; /* Additional spacing if needed */
+  border-collapse: separate;
+  border-spacing: 0 1rem; /* Provides spacing between rows */
+}
+
+.th {
+  background-color: #eee; /* Light background for headers for contrast */
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 2px solid #ccc; /* A subtle line below the header */
+}
+
+.td {
+  text-align: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd; /* Subtle line between rows */
+}
+
+/* Header.module.css */
+.title {
+  text-align: center;
+  /* Additional styling as needed */
+}
+
+/* styles/globals.css */
+header {
+  width: 100%;
+  background-color: #333; /* Dark background for the bar */
+  color: white;
+  padding: 1rem 0; /* Spacing inside the bar */
+}
+
+nav {
+  display: flex;
+  justify-content: center; /* Center the navigation links */
+  gap: 2rem; /* Space between the links */
+}
+
+nav a {
+  color: white; /* Text color for links */
+  text-decoration: none; /* Remove underline from links */
+  padding: 0.5rem; /* Spacing around link text */
+}
+
+nav a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+h1 {
+  text-align: center; /* Center the title */
+  margin-top: 1rem; /* Space above the title */
 }
